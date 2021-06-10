@@ -8,32 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <nav class="navbar">
         <div class="brand">
-            <a href="index.html" class="navbar-brand">MarinaFilms</a>
+            <a href="index.html" class="navbar-brand">MovieInfo</a>
         </div>
         <ul class="link">
-            <li class="navbar-link"><a href="index.html">HOME</a></li>
+            <li class="navbar-link"><a href="#">HOME</a></li>
             <li class="navbar-link"><a href="https://www.imdb.com/?ref_=nv_home">IMDB</a></li>
-            <li class="navbar-link"><a href="#">LINK</a></li>
+            <li class="navbar-link"><a href="#">Github</a></li>
         </ul>
     </nav>
 
-
     <div class="container">
-        <h3 class="text-center">Search For Movie</h3>
-        <div class="form">
-            <form id="searchForm">
-                <input type="text" class="form-control" id="searchText" placeholder="Search Movie...">
-            </form>
-        </div>
-        
+        <div id="movie" class="well"></div>
     </div>
 
-    <div class="container-movie">
-        <div class="row" id="movies"></div>
-    </div>
 
     <footer>
         <div class="footer">
@@ -41,16 +30,15 @@
         </div>
     </footer>
 
-
-
-
-
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
-    <script src="movie.js"></script>
+    <script>
+        getMovie();
+    </script>
+
 </body>
 </html>
